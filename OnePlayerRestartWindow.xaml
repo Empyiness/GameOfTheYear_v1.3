@@ -1,0 +1,21 @@
+﻿<Window x:Class="GameOfTheYear.OnePlayerRestartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameOfTheYear"
+        mc:Ignorable="d"
+        Height="170" Width="250"
+        Background="Black"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        KeyDown="Window_KeyDown">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Restart?" Height="25" Width="50" Foreground="LightGray" Margin="0,20,0,0"></TextBlock>
+            <Button Height="25" Click="Restart" Width="100" Content="Restart" Background="Black" Foreground="LightGray" Margin="0,0,0,10"></Button>
+            <Button Height="25" Click="BackToMenu" Width="100" Content="Menu" Background="Black" Foreground="LightGray"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="GameOfTheYear.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameOfTheYear"
+        mc:Ignorable="d"
+        Height="215" Width="250"
+        ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen"
+        Background="Black"
+        WindowStyle="None"
+        KeyDown="Window_KeyDown">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBlock Text="Menu" FontSize="20" Width="51" Margin="0,0,0,20" Foreground="LightGray"></TextBlock>
+            <Button Width="100" Height="25" Content="One Player" Foreground="LightGray" Background="Black" Margin="0,0,0,20" Click="OnePlayer"></Button>
+            <Button Width="100" Height="25" Content="Two Player" Foreground="LightGray" Background="Black" Margin="0,0,0,20" Click="TwoPlayer"></Button>
+            <Button Width="100" Height="25" Content="Exit" Foreground="LightGray" Background="Black" Click="Exit"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
